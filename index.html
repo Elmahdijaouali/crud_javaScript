@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar navbar-dark bg-dark ps-5 py-3">
+         <span class="navbar-brand mb-0 h1">CRUD en javaScript </span>
+       </nav>
+    </div>
+    <div class="container p-5">
+        <div class="row ">
+            <form action="" name="form_ajouter" class="form col-md-4">
+                nom: 
+                <input type="text" name="nom" class="form-control" > <br>
+                prénom :
+                <input type="text" name="prenom" class="form-control"> <br>
+                email :
+                <input type="text" name="email" class="form-control"> <br>
+            
+                <input type="button" onclick="ajoute()" value="Ajouter" id="ajouter" class="btn btn-primary ">
+                <input type="button"  id="modifer"  value="Modifer" class="btn btn-primary modifer " >
+            </form>
+        </div>
+        <table class="table  mt-5">
+            <thead class="thead-dark">
+                <tr >
+                    <th>nom</th>
+                    <th>prénom</th>
+                    <th>email</th>
+                    <th>supprimer</th>
+                    <th>modifer</th>
+                </tr>
+            </thead>
+            <tbody>
+             
+            </tbody>
+        </table> 
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
